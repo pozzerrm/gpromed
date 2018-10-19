@@ -13,6 +13,8 @@
 		714F464321796C7200A7329E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714F464121796C7200A7329E /* LaunchScreen.storyboard */; };
 		714F464E21796C7200A7329E /* GproMedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F464D21796C7200A7329E /* GproMedTests.swift */; };
 		714F465E2179732000A7329E /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F465D2179732000A7329E /* LoginTextField.swift */; };
+		714F46612179905E00A7329E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F46602179905E00A7329E /* UIView.swift */; };
+		714F46632179918200A7329E /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F46622179918200A7329E /* ContinueButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		714F464D21796C7200A7329E /* GproMedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GproMedTests.swift; sourceTree = "<group>"; };
 		714F464F21796C7200A7329E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		714F465D2179732000A7329E /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		714F46602179905E00A7329E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		714F46622179918200A7329E /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				714F465D2179732000A7329E /* LoginTextField.swift */,
+				714F46622179918200A7329E /* ContinueButton.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 		714F465F2179794A00A7329E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				714F46602179905E00A7329E /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,7 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714F46612179905E00A7329E /* UIView.swift in Sources */,
 				714F465E2179732000A7329E /* LoginTextField.swift in Sources */,
+				714F46632179918200A7329E /* ContinueButton.swift in Sources */,
 				714F463B21796C7000A7329E /* LoginViewController.swift in Sources */,
 				714F463921796C7000A7329E /* AppDelegate.swift in Sources */,
 			);

@@ -13,24 +13,10 @@ class LoginViewController: UIViewController {
     private let backgoundGradientLayer: CAGradientLayer = {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = UIScreen.main.bounds
-        gradientLayer.colors = [#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1).cgColor, #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1).cgColor]
+        gradientLayer.colors = [#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1).cgColor, #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1).cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
         return gradientLayer
-    }()
-    
-    private let loginButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.tintColor = .black
-        button.titleLabel?.font = UIFont(name: "Avenir-Heavy", size: 14)
-        button.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
-        button.layer.shadowRadius = 10
-        button.layer.shadowOpacity = 0.5
-        button.layer.opacity = 0.8
-        button.layer.cornerRadius = 5
-        button.backgroundColor = .white
-        return button
     }()
     
     private let logoImageView: UIImageView = {
@@ -41,29 +27,26 @@ class LoginViewController: UIViewController {
         return imageView
     }()
     
+    private let loginButton = ContinueButton(fontSize: 14)
     private let emailTextField = LoginTextField(fontSize: 18)
     private let passwordTextField = LoginTextField(fontSize: 18)
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
-        
     }
     
     private func setupLayout() {
         view.layer.addSublayer(backgoundGradientLayer)
-        
         view.addSubview(logoImageView)
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(loginButton)
         
-        
         //TODO : Implementar testes para set de UI
         emailTextField.placeholder = "Insira seu email"
         passwordTextField.placeholder = "Insira sua senha"
-        loginButton.setTitle("FAZER LOGIN", for: .normal)
+        loginButton.setTitle("ENTRAR", for: .normal)
         
         
         //TODO: Implementar screenbased para atuar sobre todos modelos de tela
@@ -91,6 +74,4 @@ class LoginViewController: UIViewController {
             
             ])
     }
-
 }
-
